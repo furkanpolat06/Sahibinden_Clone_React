@@ -2,7 +2,7 @@ import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
-import PriorityHighIcon from '@mui/icons-material/PriorityHigh';
+import PriorityHighIcon from "@mui/icons-material/PriorityHigh";
 import Typography from "@mui/material/Typography";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import Container from "@mui/material/Container";
@@ -13,11 +13,14 @@ import HomeIcon from "@mui/icons-material/Home";
 import Vitrin from "../Vitrin/Vitrin";
 import ConstructionIcon from "@mui/icons-material/Construction";
 import DirectionsCarFilledIcon from "@mui/icons-material/DirectionsCarFilled";
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer"
 import "./Home.module.css";
 const Home = () => {
   return (
     <>
+      <Navbar />
       <Container>
         <Grid container spacing={2}>
           <Grid item xs={3} style={{ marginTop: "20px" }}>
@@ -32,14 +35,14 @@ const Home = () => {
               <li>
                 <div className="row">
                   <div className="col-md-1">
-                  <PriorityHighIcon
+                    <PriorityHighIcon
                       style={{
                         color: "white",
                         backgroundColor: "gray",
                         borderRadius: "50%",
                         width: "20px",
                         height: "20px",
-                        padding:"2px"
+                        padding: "2px",
                       }}
                     ></PriorityHighIcon>
                   </div>
@@ -102,7 +105,7 @@ const Home = () => {
                         color: "black",
                         backgroundColor: "yellow",
                         borderRadius: "50%",
-                        padding:"2px"
+                        padding: "2px",
                       }}
                     ></DirectionsCarIcon>
                   </div>
@@ -140,7 +143,11 @@ const Home = () => {
                 <div className="row">
                   <div className="col-md-1">
                     <HomeIcon
-                      style={{ backgroundColor: "yellow", borderRadius: "50%",padding:"2px"}}
+                      style={{
+                        backgroundColor: "yellow",
+                        borderRadius: "50%",
+                        padding: "2px",
+                      }}
                     />
                   </div>
                   <div className="col-md-10">
@@ -169,7 +176,7 @@ const Home = () => {
                       color: "white",
                       backgroundColor: "#FCAE1A",
                       borderRadius: "50%",
-                      padding:"2px"
+                      padding: "2px",
                     }}
                   />
                 </div>
@@ -208,7 +215,7 @@ const Home = () => {
                     color: "white",
                     backgroundColor: "red",
                     borderRadius: "50%",
-                    padding:"2px"
+                    padding: "2px",
                   }}
                 ></DirectionsCarFilledIcon>
               </div>
@@ -261,7 +268,14 @@ const Home = () => {
             <hr />
             <div className="row" style={{ lineHeight: "1.6em" }}>
               <div className="col-md-1">
-                <ConstructionIcon style={{color:"white",backgroundColor:"#09B8BD",borderRadius: "50%",padding:"3px"}}></ConstructionIcon>
+                <ConstructionIcon
+                  style={{
+                    color: "white",
+                    backgroundColor: "#09B8BD",
+                    borderRadius: "50%",
+                    padding: "3px",
+                  }}
+                ></ConstructionIcon>
               </div>
               <div className="col-md-10">
                 {" "}
@@ -275,7 +289,9 @@ const Home = () => {
                   }}
                 >
                   <li>
-                    <a href="/" style={{fontWeight: "bold"}}>Yedek Parça, Aksesuar, Donanım & Tuning</a>
+                    <a href="/" style={{ fontWeight: "bold" }}>
+                      Yedek Parça, Aksesuar, Donanım & Tuning
+                    </a>
                   </li>
                   <li>
                     <a href="/">Otomotiv Ekipmanları</a>
@@ -292,84 +308,98 @@ const Home = () => {
 
             <hr />
             <div className="row" style={{ lineHeight: "1.6em" }}>
-              <div className="col-md-1"><ShoppingCartIcon style={{color:"white",backgroundColor:"purple",borderRadius:"50%",padding:"3px"}}></ShoppingCartIcon></div>
-              <div className="col-md-10"><ul class="ikinci-el" style={{ listStyle: "none", padding: "0" }}>
-              <li>
-                <a href="/" style={{fontWeight:"bold"}}>İkinci El ve <br /> Sıfır Alışveriş</a>
-              </li>
-              <li>
-                <a href="/">Bilgisayar</a>
-              </li>
-              <li>
-                <a href="/"> Cep Telefonu </a>
-              </li>
-              <li>
-                <a href="/"> Fotoğraf & Kamera </a>
-              </li>
-              <li>
-                <a href="/"> Ev Dekarasyonu </a>
-              </li>
-              <li>
-                <a href="/"> Ev Elektroniği </a>
-              </li>
-              <li>
-                <a href="/"> Elektrikli Ev Aletleri </a>
-              </li>
-              <li>
-                <a href="/"> Giyim & Aksesuar </a>
-              </li>
-              <li>
-                <a href="/"> Saat </a>
-              </li>
-              <li>
-                <a href="/"> Anne & Bebek </a>
-              </li>
-              <li>
-                <a href="/"> Kişisel Bakım & Kozmetik </a>
-              </li>
-              <li>
-                <a href="/"> Hobi & Oyuncak </a>
-              </li>
-              <li>
-                <a href="/"> Oyun & Konsol </a>
-              </li>
-              <li>
-                <a href="/"> Kitap, Dergi & Film </a>
-              </li>
-              <li>
-                <a href="/"> Müzik </a>
-              </li>
-              <li>
-                <a href="/"> Spor </a>
-              </li>
-              <li>
-                <a href="/"> Takı, Mücevher & Altın </a>
-              </li>
-              <li>
-                <a href="/"> Koleksiyon </a>
-              </li>
-              <li>
-                <a href="/"> Antika </a>
-              </li>
-              <li>
-                <a href="/"> Bahçe & Yapı Market </a>
-              </li>
-              <li>
-                <a href="/"> Teknik Elektronik </a>
-              </li>
-              <li>
-                <a href="/"> Ofis & Kırtasiye </a>
-              </li>
-              <li>
-                <a href="/"> Yiyecek & İçecek </a>
-              </li>
-              <li>
-                <a href="/"> Diğer Her Şey </a>
-              </li>
-            </ul></div>
+              <div className="col-md-1">
+                <ShoppingCartIcon
+                  style={{
+                    color: "white",
+                    backgroundColor: "purple",
+                    borderRadius: "50%",
+                    padding: "3px",
+                  }}
+                ></ShoppingCartIcon>
+              </div>
+              <div className="col-md-10">
+                <ul
+                  class="ikinci-el"
+                  style={{ listStyle: "none", padding: "0" }}
+                >
+                  <li>
+                    <a href="/" style={{ fontWeight: "bold" }}>
+                      İkinci El ve <br /> Sıfır Alışveriş
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/">Bilgisayar</a>
+                  </li>
+                  <li>
+                    <a href="/"> Cep Telefonu </a>
+                  </li>
+                  <li>
+                    <a href="/"> Fotoğraf & Kamera </a>
+                  </li>
+                  <li>
+                    <a href="/"> Ev Dekarasyonu </a>
+                  </li>
+                  <li>
+                    <a href="/"> Ev Elektroniği </a>
+                  </li>
+                  <li>
+                    <a href="/"> Elektrikli Ev Aletleri </a>
+                  </li>
+                  <li>
+                    <a href="/"> Giyim & Aksesuar </a>
+                  </li>
+                  <li>
+                    <a href="/"> Saat </a>
+                  </li>
+                  <li>
+                    <a href="/"> Anne & Bebek </a>
+                  </li>
+                  <li>
+                    <a href="/"> Kişisel Bakım & Kozmetik </a>
+                  </li>
+                  <li>
+                    <a href="/"> Hobi & Oyuncak </a>
+                  </li>
+                  <li>
+                    <a href="/"> Oyun & Konsol </a>
+                  </li>
+                  <li>
+                    <a href="/"> Kitap, Dergi & Film </a>
+                  </li>
+                  <li>
+                    <a href="/"> Müzik </a>
+                  </li>
+                  <li>
+                    <a href="/"> Spor </a>
+                  </li>
+                  <li>
+                    <a href="/"> Takı, Mücevher & Altın </a>
+                  </li>
+                  <li>
+                    <a href="/"> Koleksiyon </a>
+                  </li>
+                  <li>
+                    <a href="/"> Antika </a>
+                  </li>
+                  <li>
+                    <a href="/"> Bahçe & Yapı Market </a>
+                  </li>
+                  <li>
+                    <a href="/"> Teknik Elektronik </a>
+                  </li>
+                  <li>
+                    <a href="/"> Ofis & Kırtasiye </a>
+                  </li>
+                  <li>
+                    <a href="/"> Yiyecek & İçecek </a>
+                  </li>
+                  <li>
+                    <a href="/"> Diğer Her Şey </a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            
-           
           </Grid>
           <Grid item xs={9}>
             <div>
@@ -393,6 +423,7 @@ const Home = () => {
           </Grid>
         </Grid>
       </Container>
+      <Footer />
     </>
   );
 };
