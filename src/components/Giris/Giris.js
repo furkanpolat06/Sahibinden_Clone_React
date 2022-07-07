@@ -62,7 +62,7 @@ const Giris = () => {
                   marginBottom: "12px",
                 }}
               >
-                Bilgilendirmeleri görüntülemek için giriş yapın
+                Bilgilendirmeleri <br /> görüntülemek için giriş yapın
               </Typography>
               <TextField
                 margin="normal"
@@ -143,7 +143,7 @@ const Giris = () => {
               </div>
              <Grid>
                 <Grid item  sx={{textAlign:"center",mt:"30px",fontSize:"14px",color:"#33333"}}>
-                    Hesabın yok mu? <Link to="/">Hesap Aç </Link>
+                    Hesabın yok mu? <Link to="/kayitol">Hesap Aç </Link>
                 </Grid>
              </Grid>
             <Grid>

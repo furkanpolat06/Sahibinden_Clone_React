@@ -17,7 +17,7 @@ const Footer = () => {
         style={{
           width: "100%",
           backgroundColor: "#f9f9f9",
-          borderTop: "1px solid #dfdfdf",
+          borderTop: "1px solid #dfdfdf",          
         }}
       >
         <Container className="footer-container">
