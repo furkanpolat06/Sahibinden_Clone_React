@@ -1,0 +1,16 @@
+.input-box{
+    width: 243px;
+    height: 34px;
+    float: left;
+    padding-left: 7px;
+    padding-right: 40px;
+    background-color: #2f3546;
+    font-size: 13px;
+    border: 0;
+    border-radius: 3px;
+    outline: 0;
+    box-sizing: content-box;
+}
+.input-box:focus{
+    background-color: #fff;
+}
