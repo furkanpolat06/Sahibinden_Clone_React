@@ -1,0 +1,33 @@
+.list .row .col-md-6 ul li a{
+    font-size: 13px;
+    top:5px;
+    
+    color:#039;
+    text-decoration: none;
+    outline:0;
+}
+.list .row .col-md-6 ul li {
+    list-style: none;
+    margin-bottom:10px;
+}
+.list{
+    margin:0;
+    padding:0;
+}
+.footer-list ul li {
+    list-style: none;
+    margin-top: 10px;
+    font-size:13px;
+    margin-left: 30px;
+    margin-bottom:5px;
+}
+.footer-list{
+    background-color: #fafafa;
+    bottom:0;
+    left:0;
+    
+    width: 100%;
+    height: 36px;
+    border-radius: 0 0 4px 4px;
+    
+}

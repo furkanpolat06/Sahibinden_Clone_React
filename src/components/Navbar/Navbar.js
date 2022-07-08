@@ -4,7 +4,7 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import SearchIcon from '@mui/icons-material/Search';
 import Typography from "@mui/material/Typography";
-
+import {Link} from "react-router-dom"
 import Container from "@mui/material/Container";
 
 import { Grid } from "@mui/material";
@@ -78,35 +78,22 @@ const ResponsiveAppBar = () => {
               </Grid>
             </Grid>
             <Box sx={{ flexGrow: 0, display: { xs: "none", md: "flex" } }}>
-              <Typography
-                sx={{
-                  fontSize: "11px",
+              <a href="/giris" style={{fontSize: "11px",
                   color: "#ebebeb",
                   textShadow: "1px 1px 0 #2f3339",
                   textAlign: "right",
                   outline: "0",
                   listStyle: "none",
-                  padding: "5px 10px 5px 10px",
-                }}
-              >
-                GirişYap
-              </Typography>
+                  padding: "5px 10px 5px 10px"}}>GirişYap</a>
             </Box>
             <Box sx={{ flexGrow: 0, display: { xs: "none", md: "flex" } }}>
-              <Typography
-                sx={{
-                  fontSize: "11px",
+            <a href="/kayitol" style={{fontSize: "11px",
                   color: "#ebebeb",
                   textShadow: "1px 1px 0 #2f3339",
                   textAlign: "right",
                   outline: "0",
                   listStyle: "none",
-                  borderLeft: "1px solid #404349",
-                  padding: "5px 10px 5px 10px",
-                }}
-              >
-                HesapAç
-              </Typography>
+                  padding: "5px 10px 5px 10px"}}>HesapAç</a>
             </Box>
             <Box sx={{ flexGrow: 0, display: { xs: "none", md: "flex" } }}>
               <button
