@@ -16,9 +16,16 @@ import Container from "@mui/material/Container";
 import Card from "@mui/material/Card";
 import GirisFooter from "../GirisFooter/GirisFooter";
 import { Link } from "react-router-dom";
-import './NotFound.Module.css'
+import ConstructionIcon from "@mui/icons-material/Construction";
+import DirectionsCarFilledIcon from "@mui/icons-material/DirectionsCarFilled";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import HomeIcon from "@mui/icons-material/Home";
+import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import DirectionsCarIcon from "@mui/icons-material/DirectionsCar";
+import AgricultureIcon from "@mui/icons-material/Agriculture";
+import "./NotFound.Module.css";
 const NotFound = () => {
-  document.body.style.backgroundColor = "#f8f8f8";
+  document.body.style.backgroundColor = "#f2f2f2";
 
   return (
     <>
@@ -46,12 +53,21 @@ const NotFound = () => {
                 marginTop: "20px",
               }}
             ></img>
-            <Box component="form" noValidate style={{ paddingLeft:"30px",paddingRight:"30px", width: "460px",paddingTop:"30px"}}>
-              <p style={{ fontSize: "24px", textAlign: "center" }}>
+            <Box
+              component="form"
+              noValidate
+              style={{
+                paddingLeft: "30px",
+                paddingRight: "30px",
+                width: "460px",
+                paddingTop: "30px",
+              }}
+            >
+              <p style={{ fontSize: "24px", textAlign: "center",marginBottom:"0"}}>
                 Aradığınız sayfaya{" "}
                 <span style={{ fontWeight: "bold" }}>ulaşılmadı.</span>
               </p>
-              <p style={{ fontSize: "13px" }}>
+              <p style={{ fontSize: "13px", textAlign: "center" }}>
                 Aşağıdaki bağlantılar aradığınız içeriğe ulaşmanızı
                 sağlayabilir.
               </p>
@@ -59,7 +75,7 @@ const NotFound = () => {
               <TextField
                 margin="normal"
                 fullWidth
-                sx={{ height: "50px" }}
+                sx={{ height: "50px",mt:0 }}
                 name="password"
                 label="Ne aramıştınız?"
                 type={"text"}
@@ -76,44 +92,216 @@ const NotFound = () => {
                 }}
               />
               <hr />
-             
             </Box>
-            <div className="list">
-                <div className="row">
-                  <div className="col-md-6">
-                    <ul>
-                      <li><a href="/">Emlak</a></li>
-                      <li><a href="/">Vasıta.</a></li>
-                      <li><a href="/">Yedek Parça, Aksesuar Donanım & Tuning</a></li>
-                      <li><a href="/">İkinci El ve Sıfır Alışveriş</a></li>
-                      <li><a href="/">İş Makineleri & Sanayi</a></li>
-                      <li><a href="/">Oto360</a></li>
-                    </ul>
+            <div className="list" style={{ margin: "30px" }}>
+              <div className="row">
+                <div className="col-md-6">
+                  <div className="row">
+                    <div className="col-md-1">
+                      <HomeIcon
+                        style={{
+                          backgroundColor: "yellow",
+                          borderRadius: "50%",
+                          padding: "2px",
+                        }}
+                      />
+                    </div>
+                    <div className="col-md-10">
+                      <a href="/">Emlak</a>
+                    </div>
                   </div>
-                  <div className="col-md-6">
-                    <ul>
-                      <li><a href="/">Ustalar ve Hizmetler</a></li>
-                      <li><a href="/">Özel Ders Verenler</a></li>
-                      <li><a href="/">İş İlanları</a></li>
-                      <li><a href="/">Yardımcı Arayanlar</a></li>
-                      <li><a href="/">Hayvanlar Alemi</a></li>
-                      <li><a href="/">Emlak360</a></li>
-                    </ul>
+                </div>
+                <div className="col-md-6">
+                  <div className="row">
+                    <div className="col-md-1">
+                      <DirectionsCarFilledIcon
+                        style={{
+                          backgroundColor: "yellow",
+                          borderRadius: "50%",
+                          padding: "2px",
+                        }}
+                      />
+                    </div>
+                    <div className="col-md-10">
+                      <a href="/">Ustalar ve Hizmetler</a>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <div className="row">
+                    <div className="col-md-1">
+                      <HomeIcon
+                        style={{
+                          backgroundColor: "yellow",
+                          borderRadius: "50%",
+                          padding: "2px",
+                        }}
+                      />
+                    </div>
+                    <div className="col-md-10">
+                      <a href="/">Vasıta</a>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <div className="row">
+                    <div className="col-md-1">
+                      <DirectionsCarFilledIcon
+                        style={{
+                          backgroundColor: "yellow",
+                          borderRadius: "50%",
+                          padding: "2px",
+                        }}
+                      />
+                    </div>
+                    <div className="col-md-10">
+                      <a href="/">Özel Ders Verenler</a>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <div className="row">
+                    <div className="col-md-1">
+                      {" "}
+                      <HomeIcon
+                        style={{
+                          backgroundColor: "yellow",
+                          borderRadius: "50%",
+                          padding: "2px",
+                        }}
+                      />
+                    </div>
+                    <div className="col-md-10">
+                      <a href="/">Yedek Parça , Aksesuar Donanım & Tuning</a>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <div className="row">
+                    <div className="col-md-1">
+                      <DirectionsCarFilledIcon
+                        style={{
+                          backgroundColor: "yellow",
+                          borderRadius: "50%",
+                          padding: "2px",
+                        }}
+                      />
+                    </div>
+                    <div className="col-md-10">
+                      <a href="/">İş İlanları</a>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <div className="row">
+                    <div className="col-md-1">
+                      {" "}
+                      <HomeIcon
+                        style={{
+                          backgroundColor: "yellow",
+                          borderRadius: "50%",
+                          padding: "2px",
+                        }}
+                      />
+                    </div>
+                    <div className="col-md-10">
+                      <a href="/">İkinci El ve Sıfır Alışveriş</a>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <div className="row">
+                    <div className="col-md-1">
+                      <DirectionsCarFilledIcon
+                        style={{
+                          backgroundColor: "yellow",
+                          borderRadius: "50%",
+                          padding: "2px",
+                        }}
+                      />
+                    </div>
+                    <div className="col-md-10">
+                      <a href="/">Yardımcı Arayanlar</a>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <div className="row">
+                    <div className="col-md-1">
+                      <HomeIcon
+                        style={{
+                          backgroundColor: "yellow",
+                          borderRadius: "50%",
+                          padding: "2px",
+                        }}
+                      />
+                    </div>
+                    <div className="col-md-10">
+                      <a href="/">İş Makineleri & Sanayi</a>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <div className="row">
+                    <div className="col-md-1">
+                      <DirectionsCarFilledIcon
+                        style={{
+                          backgroundColor: "yellow",
+                          borderRadius: "50%",
+                          padding: "2px",
+                        }}
+                      />
+                    </div>
+                    <div className="col-md-10">
+                      <a href="/">Hayvanlar Alemi</a>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <div className="row">
+                    <div className="col-md-1">
+                      <HomeIcon
+                        style={{
+                          backgroundColor: "yellow",
+                          borderRadius: "50%",
+                          padding: "2px",
+                        }}
+                      />
+                    </div>
+                    <div className="col-md-10">
+                      <a href="/">Oto360</a>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <div className="row">
+                    <div className="col-md-1">
+                      <DirectionsCarFilledIcon
+                        style={{
+                          backgroundColor: "yellow",
+                          borderRadius: "50%",
+                          padding: "2px",
+                        }}
+                      />
+                    </div>
+                    <div className="col-md-10">
+                      <a href="/">Emlak360</a>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className="footer-list" >
-                <ul style={{display:"flex",textAlign:"center"}}>
-                  <li>Ana Sayfa</li>
-                  <li> İlan Ver</li>
-                  <li>Bana Özel</li>
-                  <li>Yardım</li>
-                </ul>
-              </div>
+            </div>
+            <div className="footer-list">
+              <ul style={{ display: "flex", textAlign: "center" }}>
+                <li>Ana Sayfa</li>
+                <li> İlan Ver</li>
+                <li>Bana Özel</li>
+                <li>Yardım</li>
+              </ul>
+            </div>
           </Card>
         </Box>
       </Container>
-      
     </>
   );
 };
