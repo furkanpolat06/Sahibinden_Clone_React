@@ -4,25 +4,26 @@ import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
 import TextField from "@mui/material/TextField";
 import FormControlLabel from "@mui/material/FormControlLabel";
-import { Visibility, VisibilityOff } from "@mui/icons-material";
 import Checkbox from "@mui/material/Checkbox";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
-import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
 import { InputAdornment, IconButton } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import Container from "@mui/material/Container";
 import Card from "@mui/material/Card";
-import GirisFooter from "../GirisFooter/GirisFooter";
 import { Link } from "react-router-dom";
-import ConstructionIcon from "@mui/icons-material/Construction";
 import DirectionsCarFilledIcon from "@mui/icons-material/DirectionsCarFilled";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import HomeIcon from "@mui/icons-material/Home";
-import AccessTimeIcon from "@mui/icons-material/AccessTime";
-import DirectionsCarIcon from "@mui/icons-material/DirectionsCar";
-import AgricultureIcon from "@mui/icons-material/Agriculture";
+import DirectionsCarIcon from '@mui/icons-material/DirectionsCar';
+import ConstructionIcon from '@mui/icons-material/Construction';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import AgricultureIcon from '@mui/icons-material/Agriculture';
+import FormatPaintIcon from '@mui/icons-material/FormatPaint';
+import MenuBookIcon from '@mui/icons-material/MenuBook';
+import EngineeringIcon from '@mui/icons-material/Engineering';
+import ChildFriendlyIcon from '@mui/icons-material/ChildFriendly';
+import PetsIcon from '@mui/icons-material/Pets';
 import "./NotFound.Module.css";
 const NotFound = () => {
   document.body.style.backgroundColor = "#f2f2f2";
@@ -40,7 +41,7 @@ const NotFound = () => {
           }}
         >
           <Card
-            sx={{ mt: 3, border: "1px solid #dfdfdf", borderRadius: "3px" }}
+            sx={{ mt: 3, border: "1px solid #dfdfdf", borderRadius: "10px" }}
           >
             <img
               src="https://iconape.com/wp-content/files/ay/337946/png/sahibinden-com-logo.png"
@@ -85,7 +86,7 @@ const NotFound = () => {
                   endAdornment: (
                     <InputAdornment position="end">
                       <IconButton aria-label="Toggle Password" edge="end">
-                        <SearchIcon />
+                        <SearchIcon/>
                       </IconButton>
                     </InputAdornment>
                   ),
@@ -100,7 +101,8 @@ const NotFound = () => {
                     <div className="col-md-1">
                       <HomeIcon
                         style={{
-                          backgroundColor: "yellow",
+                          backgroundColor: "#FCAE1A",
+                          color:"white",
                           borderRadius: "50%",
                           padding: "2px",
                         }}
@@ -114,11 +116,12 @@ const NotFound = () => {
                 <div className="col-md-6">
                   <div className="row">
                     <div className="col-md-1">
-                      <DirectionsCarFilledIcon
+                      <FormatPaintIcon
                         style={{
-                          backgroundColor: "yellow",
+                          backgroundColor: "#459CE1",
+                          color:"white",
                           borderRadius: "50%",
-                          padding: "2px",
+                          padding: "4px",
                         }}
                       />
                     </div>
@@ -130,11 +133,12 @@ const NotFound = () => {
                 <div className="col-md-6">
                   <div className="row">
                     <div className="col-md-1">
-                      <HomeIcon
+                      <DirectionsCarIcon
                         style={{
-                          backgroundColor: "yellow",
+                          backgroundColor: "#F32B2D",
+                          color:"white",
                           borderRadius: "50%",
-                          padding: "2px",
+                          padding: "3px",
                         }}
                       />
                     </div>
@@ -146,11 +150,12 @@ const NotFound = () => {
                 <div className="col-md-6">
                   <div className="row">
                     <div className="col-md-1">
-                      <DirectionsCarFilledIcon
+                      <MenuBookIcon
                         style={{
-                          backgroundColor: "yellow",
+                          backgroundColor: "#51B27C",
+                          color:"white",
                           borderRadius: "50%",
-                          padding: "2px",
+                          padding: "4px",
                         }}
                       />
                     </div>
@@ -163,11 +168,12 @@ const NotFound = () => {
                   <div className="row">
                     <div className="col-md-1">
                       {" "}
-                      <HomeIcon
+                      <ConstructionIcon
                         style={{
-                          backgroundColor: "yellow",
+                          backgroundColor: "#09B8BD",
+                          color:"white",
                           borderRadius: "50%",
-                          padding: "2px",
+                          padding: "3px",
                         }}
                       />
                     </div>
@@ -179,11 +185,12 @@ const NotFound = () => {
                 <div className="col-md-6">
                   <div className="row">
                     <div className="col-md-1">
-                      <DirectionsCarFilledIcon
+                      <EngineeringIcon
                         style={{
-                          backgroundColor: "yellow",
+                          backgroundColor: "#94BB3E",
                           borderRadius: "50%",
-                          padding: "2px",
+                          color:"white",
+                          padding: "4px",
                         }}
                       />
                     </div>
@@ -196,11 +203,12 @@ const NotFound = () => {
                   <div className="row">
                     <div className="col-md-1">
                       {" "}
-                      <HomeIcon
+                      <ShoppingCartIcon
                         style={{
-                          backgroundColor: "yellow",
+                          backgroundColor: "#6C6FFC",
+                          color:"white",
                           borderRadius: "50%",
-                          padding: "2px",
+                          padding: "4px",
                         }}
                       />
                     </div>
@@ -212,11 +220,12 @@ const NotFound = () => {
                 <div className="col-md-6">
                   <div className="row">
                     <div className="col-md-1">
-                      <DirectionsCarFilledIcon
+                      <ChildFriendlyIcon
                         style={{
-                          backgroundColor: "yellow",
+                          backgroundColor: "#FE7A18",
+                          color:"white",
                           borderRadius: "50%",
-                          padding: "2px",
+                          padding: "3px",
                         }}
                       />
                     </div>
@@ -228,11 +237,12 @@ const NotFound = () => {
                 <div className="col-md-6">
                   <div className="row">
                     <div className="col-md-1">
-                      <HomeIcon
+                      <AgricultureIcon
                         style={{
-                          backgroundColor: "yellow",
+                          backgroundColor: "#A55FFD"
+                          ,color:"white",
                           borderRadius: "50%",
-                          padding: "2px",
+                          padding: "3px",
                         }}
                       />
                     </div>
@@ -244,10 +254,11 @@ const NotFound = () => {
                 <div className="col-md-6">
                   <div className="row">
                     <div className="col-md-1">
-                      <DirectionsCarFilledIcon
+                      <PetsIcon
                         style={{
-                          backgroundColor: "yellow",
+                          backgroundColor: "#19BAE8",
                           borderRadius: "50%",
+                          color: "white",
                           padding: "2px",
                         }}
                       />
@@ -260,11 +271,12 @@ const NotFound = () => {
                 <div className="col-md-6">
                   <div className="row">
                     <div className="col-md-1">
-                      <HomeIcon
+                      <DirectionsCarFilledIcon
                         style={{
                           backgroundColor: "yellow",
                           borderRadius: "50%",
-                          padding: "2px",
+                          color:"#494942",
+                          padding: "3px",
                         }}
                       />
                     </div>
@@ -276,7 +288,7 @@ const NotFound = () => {
                 <div className="col-md-6">
                   <div className="row">
                     <div className="col-md-1">
-                      <DirectionsCarFilledIcon
+                      <HomeIcon
                         style={{
                           backgroundColor: "yellow",
                           borderRadius: "50%",
@@ -293,10 +305,10 @@ const NotFound = () => {
             </div>
             <div className="footer-list">
               <ul style={{ display: "flex", textAlign: "center" }}>
-                <li>Ana Sayfa</li>
-                <li> İlan Ver</li>
-                <li>Bana Özel</li>
-                <li>Yardım</li>
+                <li><a href="/"> Ana Sayfa</a></li>
+                <li><a href="/">  İlan Ver</a></li>
+                <li><a href="/"> Bana Özel</a></li>
+                <li><a href="/"> Yardım</a></li>
               </ul>
             </div>
           </Card>
