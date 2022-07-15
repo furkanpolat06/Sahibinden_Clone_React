@@ -2,9 +2,9 @@ import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
-import SearchIcon from '@mui/icons-material/Search';
+import SearchIcon from "@mui/icons-material/Search";
 import Typography from "@mui/material/Typography";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 import Container from "@mui/material/Container";
 
 import { Grid } from "@mui/material";
@@ -12,7 +12,11 @@ import "./Navbar.Module.css";
 const ResponsiveAppBar = () => {
   return (
     <>
-      <AppBar position="static" style={{ backgroundColor: "#3F475F" }} sx={{ display: { xs: "none", md: "flex" } }}>
+      <AppBar
+        position="static"
+        style={{ backgroundColor: "#3F475F" }}
+        sx={{ display: { xs: "none", md: "flex" } }}
+      >
         <Container>
           <Toolbar disableGutters>
             <Grid container spacing={2}>
@@ -77,41 +81,58 @@ const ResponsiveAppBar = () => {
                 </Box>
               </Grid>
             </Grid>
+
             <Box sx={{ flexGrow: 0, display: { xs: "none", md: "flex" } }}>
-              <a href="/giris" style={{fontSize: "11px",
-                  color: "#ebebeb",
-                  textShadow: "1px 1px 0 #2f3339",
-                  textAlign: "right",
-                  borderRight:"1px solid #60656E",
-                  outline: "0",
-                  listStyle: "none",
-                  padding: "5px 10px 5px 10px"}}>GirişYap</a>
-            </Box>
-            <Box sx={{ flexGrow: 0, display: { xs: "none", md: "flex" } }}>
-            <a href="/kayitol" style={{fontSize: "11px",
-                  color: "#ebebeb",
-                  textShadow: "1px 1px 0 #2f3339",
-                  textAlign: "right",
-                  outline: "0",
-                  listStyle: "none",
-                  padding: "5px 10px 5px 10px"}}>HesapAç</a>
-            </Box>
-            <Box sx={{ flexGrow: 0, display: { xs: "none", md: "flex" } }}>
-              <button
-                type="button"
-                class="btn btn-primary"
+              <a
+                href="/giris"
                 style={{
-                  padding: "10px 19px 8px 19px",
-                  marginLeft: "11px",
-                  fontSize: "13px",
-                  fontWeight: "bold",
-                  lineHeight: "1.4em",
-                  width: "145px",
-                  backgroundColor: "#489af1",
+                  fontSize: "11px",
+                  color: "#ebebeb",
+                  textShadow: "1px 1px 0 #2f3339",
+                  textAlign: "right",
+                  borderRight: "1px solid #60656E",
+                  outline: "0",
+                  listStyle: "none",
+                  padding: "5px 10px 5px 10px",
                 }}
               >
-                Ücretsiz* İlan Ver
-              </button>
+                GirişYap
+              </a>
+            </Box>
+            <Box sx={{ flexGrow: 0, display: { xs: "none", md: "flex" } }}>
+              <a
+                href="/kayitol"
+                style={{
+                  fontSize: "11px",
+                  color: "#ebebeb",
+                  textShadow: "1px 1px 0 #2f3339",
+                  textAlign: "right",
+                  outline: "0",
+                  listStyle: "none",
+                  padding: "5px 10px 5px 10px",
+                }}
+              >
+                HesapAç
+              </a>
+            </Box>
+            <Box sx={{ flexGrow: 0, display: { xs: "none", md: "flex" } }}>
+              <Link to="/ilanver" style={{ color: "white" }}>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  style={{
+                    padding: "10px 19px 8px 19px",
+                    marginLeft: "11px",
+                    fontSize: "13px",
+                    fontWeight: "bold",
+                    lineHeight: "1.4em",
+                    width: "145px",
+                    backgroundColor: "#489af1",
+                  }}
+                >
+                  Ücretsiz* İlan Ver
+                </button>
+              </Link>
             </Box>
           </Toolbar>
         </Container>
