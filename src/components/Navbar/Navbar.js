@@ -82,6 +82,7 @@ const ResponsiveAppBar = () => {
                   color: "#ebebeb",
                   textShadow: "1px 1px 0 #2f3339",
                   textAlign: "right",
+                  borderRight:"1px solid #60656E",
                   outline: "0",
                   listStyle: "none",
                   padding: "5px 10px 5px 10px"}}>GirişYap</a>
