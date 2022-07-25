@@ -20,6 +20,7 @@ import "./IlanVer.Module.css";
 import { TextField } from "@mui/material";
 const IlanVer = () => {
   document.body.style.backgroundColor = "#FAFAFA";
+  
   return (
     <>
       <Navbar />
@@ -28,7 +29,7 @@ const IlanVer = () => {
           className="progress-holder"
           style={{ height: "121px", width: "980px" }}
         ></div>
-        <Card>
+        <Card >
           <Card item sx={{ height: "700px" }}>
             <Container>
               <Typography
@@ -42,7 +43,7 @@ const IlanVer = () => {
                 Adım Adım Kategori Seç
               </Typography>
 
-              <div className="row">
+              <div className="row hover-row">
                 <div
                   className="col"
                   style={{
@@ -52,6 +53,7 @@ const IlanVer = () => {
                     width: "176px",
                     borderRadius: "5px",
                   }}
+                  
                 >
                   <p style={{ textAlign: "center" }}>
                     <HomeIcon
@@ -216,7 +218,7 @@ const IlanVer = () => {
                 </div>
               </div>
 
-              <div className="row" style={{ marginTop: "20px" }}>
+              <div className="row hover-row" style={{ marginTop: "20px" }}>
                 <div
                   className="col"
                   style={{
@@ -328,6 +330,7 @@ const IlanVer = () => {
                     width: "176px",
                     borderRadius: "5px",
                   }}
+                  
                 >
                   <p style={{ textAlign: "center" }}>
                     <ChildFriendlyIcon
@@ -408,6 +411,7 @@ const IlanVer = () => {
             </Container>
           </Card>
         </Card>
+        
       </Container>
       <GirisFooter />
     </>

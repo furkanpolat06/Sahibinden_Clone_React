@@ -1,8 +1,8 @@
-.row .col{
+.hover-row .col{
     cursor: pointer;
     box-shadow:0 0 5px 0 rgb(0 0 0 / 30%);
 }
-.row .col:hover{
+.hover-row .col:hover{
     box-shadow: 0 0 20px 0 rgb(0 0 0 / 30%); 
 }
 .cizgi{
@@ -23,4 +23,3 @@
     background-color: #fff;
     
 }
-.search{}
